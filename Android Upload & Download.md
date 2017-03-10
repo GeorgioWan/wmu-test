@@ -20,7 +20,7 @@ StorageReference stRef= storageRef.child("videos/vvv.mp4");
 ```java
 UploadTask ut = stRef.putBytes(data); 
 // 如果不是轉成 bite 是讀檔近來也可用 putFile() or putStream() 上傳
-uploadTask.addOnFailureListener(new OnFailureListener() {
+ut.addOnFailureListener(new OnFailureListener() {
     @Override
     public void onFailure(@NonNull Exception exception) {
         // 處理上傳失敗的狀況

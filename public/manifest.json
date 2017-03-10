@@ -1,0 +1,10 @@
+{
+  "name": "WakeMeUp",
+  "short_name": "WMU",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+    "gcm", "storage"
+  ],
+  "gcm_sender_id": "103953800507"
+}
